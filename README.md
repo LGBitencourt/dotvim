@@ -8,3 +8,10 @@ My vim config
     cd ~/.vim
     git submodule init
     git submodule update
+
+## Upgrading a plugin bundle
+    cd ~/.vim/bundle/<plugin_name>
+    git pull origin master
+    
+## Upgrading all bundled plugins
+    git submodule foreach git pull origin master
