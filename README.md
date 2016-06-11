@@ -8,6 +8,12 @@ My vim config
     cd ~/.vim
     git submodule init
     git submodule update
+    
+## Install plugins as submodules
+    cd ~/.vim
+    git submodule add <url_to_plugin_git> bundle/<plugin_name>
+    git add .
+    git commit -m "Install <plugin_name>.vim bundle as a submodule."
 
 ## Upgrading a plugin bundle
     cd ~/.vim/bundle/<plugin_name>
