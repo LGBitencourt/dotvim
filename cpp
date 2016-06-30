@@ -5,10 +5,9 @@
 #define ss second
 #define what_is(x) cerr << #x << " is " << x << endl;
 #ifdef ONLINE_JUDGE
-#  define LLD "%I64d"
+#  define lld I64d
 #  define debug(args...) {}
 #else
-#  define LLD "%lld"
 #  define debug(args...) fprintf(stderr, args)
 #endif
 using namespace std;
