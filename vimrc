@@ -1,5 +1,4 @@
 execute pathogen#infect()
-set term=xterm-256color
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -7,6 +6,15 @@ filetype plugin indent on
 syntax on
 set mouse=a
 set number
-colorscheme thornbird
+set ruler
 autocmd BufNewFile *.cpp :0r ~/.vim/cpp
-autocmd BufNewFile *.cpp +25
+autocmd BufNewFile *.cpp +16
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+if expand('%:p:h:h') == "/Users/gustavo/workspace/USP/MAC0328"
+    autocmd BufNewFile *.c :0r ~/workspace/USP/MAC0328/gabarito
+    autocmd BufNewFile *.c +17
+    autocmd BufNewFile *.h :0r ~/workspace/USP/MAC0328/gabarito
+    autocmd BufNewFile *.h +17
+endif
