@@ -6,7 +6,7 @@ filetype plugin indent on
 syntax on
 set mouse=a
 set number
-"set ruler
+set ruler
 let g:onedark_termcolors=256
 let g:onedark_terminal_italics=1
 colorscheme onedark

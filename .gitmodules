@@ -13,3 +13,9 @@
 [submodule "bundle/vim-polyglot"]
 	path = bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "bundle/tender"]
+	path = bundle/tender
+	url = https://github.com/jacoborus/tender.vim
+[submodule "bundle/syntax"]
+	path = bundle/syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
