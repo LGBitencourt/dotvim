@@ -9,6 +9,10 @@ set number
 set ruler
 let g:onedark_termcolors=256
 let g:onedark_terminal_italics=1
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
 colorscheme onedark
 autocmd BufNewFile *.cpp :0r ~/.vim/cpp
 autocmd BufNewFile *.cpp +11
